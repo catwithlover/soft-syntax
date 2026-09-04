@@ -121,6 +121,7 @@ Read [references/design-system.md](references/design-system.md) before choosing 
 - Use bright neutral canvases and dark, slightly softened text rather than pure black on pure white everywhere.
 - Define color by role: canvas, surface, ink, muted text, border, action, accent, focus, success, warning, and error.
 - Derive exact colors from the product subject and verify contrast. Do not choose a house hue before understanding the context.
+- When restyling an existing product and the user has not requested a new palette, ground the color system in the product's existing colors: sample its computed styles and logo, then adjust those colors into the role palette instead of inventing a new scheme. If the page shows no discernible color plan, start from the logo's colors. See "When Restyling an Existing Product" in [references/design-system.md](references/design-system.md).
 - Use one action hue and at most one non-semantic contextual accent in a viewport. Small labeled category cues and an illustration's internal palette may add semantic colors, but they must not compete with actions or become a second interface palette. An expressive region may use a gradient only when it has a clear job.
 - Set the container, type scale, spacing, and responsive behavior before adding imagery, shadows, or motion.
 - Keep equivalent components consistent in shape, control height, icon family, and interaction behavior.
@@ -223,6 +224,7 @@ Approachable minimalism is a design method, not a fixed visual template. Each re
 Avoid these failure modes:
 
 - Reusing the same palette across unrelated projects
+- Inventing a fresh palette for a restyle when the target's existing colors or logo could anchor it
 - Assigning fixed colors or gradients to generic content categories
 - Defaulting to any signature treatment before the product context justifies it
 - Copying exact dimensions, breakpoints, card proportions, or page recipes from a reference site

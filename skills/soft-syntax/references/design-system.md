@@ -94,6 +94,16 @@ Do not default to green or teal. The action and accent hues should come from the
 - Borders should organize content without outlining every surface.
 - Inputs may use a subtle neutral fill, but active and error states must remain visible.
 
+### When Restyling an Existing Product
+
+Unless the user explicitly asks for a new palette, the product's existing colors are the source material, not a suggestion:
+
+1. Sample before choosing. Collect computed styles for canvas, surfaces, text, links, buttons, badges, and borders from representative components and states, plus the logo's fill colors and any documented brand tokens.
+2. Read the existing scheme. Identify which hues recur, which color reads as the brand or action color, and which combinations are framework defaults or accidents.
+3. Choose the basis. If the page has a discernible color plan, derive the new role palette from it. If it does not, start from the logo's colors and their pairing.
+4. Adjust, do not replace. Tune lightness, saturation, temperature, and pairings so each role passes WCAG AA and organizes the page. Keep recognizable brand hues recognizable: shifting them for contrast is adjustment, swapping them for new hues is a rebrand and needs an explicit request or a stated rationale.
+5. Record the basis. Note what was sampled and what was adjusted in the direction notes or completion report so the palette can be audited against the original.
+
 ### When Product Signals Are Weak
 
 Do not solve missing identity cues by reusing a house palette. Infer a neutral temperature and action hue from the audience, task, content, and desired emotional tone, then state that rationale before implementation. If the missing context would materially affect brand fit, ask one concise question rather than silently applying a stock color recipe.
