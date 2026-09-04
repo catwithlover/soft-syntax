@@ -49,6 +49,10 @@ the first time. Make it easy to compare courses, filter them by topic and
 difficulty, and understand where to begin. Keep the experience calm and encouraging.
 ```
 
+## Demos
+
+The [`demos/`](demos/) directory collects before/after captures of real websites restyled with the skill — currently the [Selenium homepage](demos/selenium/) — with notes on the strategy, palette basis, and decisions behind each result.
+
 ## Image Generation
 
 If the host harness or model runtime provides an image-generation tool, Soft Syntax can guide it with the included [illustration language](skills/soft-syntax/references/illustration-language.md). Describe what the product does, what the logo should convey, and where it will be used. Do not ask it to imitate an existing logo.

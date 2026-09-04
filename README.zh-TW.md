@@ -49,6 +49,10 @@ cp -r soft-syntax/skills/soft-syntax /path/to/your/agent/skills/
 且具有鼓勵性。
 ```
 
+## 改造示範
+
+[`demos/`](demos/) 目錄收集以本 skill 改造真實網站的前後對照截圖——目前收錄 [Selenium 首頁](demos/selenium/)，並記錄每個成果的策略、配色依據與設計決策。
+
 ## 圖像生成
 
 如果宿主 harness 或模型 runtime 提供圖像生成工具，Soft Syntax 會依照內含的[插畫規範](skills/soft-syntax/references/illustration-language.md)引導生成結果。請說明產品用途、Logo 要傳達的概念及使用情境，不要要求模仿既有 Logo。
