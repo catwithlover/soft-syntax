@@ -10,4 +10,4 @@
 
 The modified font does not use the Reserved Font Names `open huninn` or `huninn` as its primary font name. Original copyright and license metadata remain in the font for attribution. The complete Huninn OFL and Kosugi Maru Apache-2.0 notices are published under `/licenses/fonts/huninn/` by the Pages workflow.
 
-The subset contains the glyphs used by `site/zh-TW/index.html` and the localized copy feedback in `site/script.js`. Regenerate it whenever that text gains new characters.
+The subset contains the glyphs used by the `site/zh-TW/` pages (including localized demo pages) and the localized copy feedback in `site/script.js`. Regenerate it whenever that text gains new characters.
