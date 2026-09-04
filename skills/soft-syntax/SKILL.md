@@ -116,7 +116,7 @@ A Structured Browse route may contain one Expressive Welcome feature. Do not giv
 
 Read [references/design-system.md](references/design-system.md) before choosing tokens, implementing styles, or reviewing visual-system and accessibility decisions.
 
-- For a new standalone product without an established or mandated typeface, use Quicksand for Latin text and Huninn (`jf open 粉圓`) for Traditional Chinese. Preserve a suitable product typeface when extending or restyling an existing product.
+- Choose typography from the product's subject, audience, content, and intended voice. Quicksand for Latin text with Huninn (`jf open 粉圓`) for Traditional Chinese is a bundled fallback suited to friendly, beginner-oriented products, not a house default. When the product needs a different voice, select a better-fitting typeface and state the reason. Preserve a suitable product typeface when extending or restyling an existing product.
 - Prefer the unmodified files in [assets/fonts](assets/fonts) when the project needs deterministic, offline, or self-hosted typography. Follow the bundled font notes and copy every required license and notice with an asset; Huninn requires both `LICENSE.txt` and `APACHE-2.0.txt`. Do not convert or subset a font while retaining a Reserved Font Name.
 - Use bright neutral canvases and dark, slightly softened text rather than pure black on pure white everywhere.
 - Define color by role: canvas, surface, ink, muted text, border, action, accent, focus, success, warning, and error.

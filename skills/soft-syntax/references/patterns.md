@@ -2,6 +2,24 @@
 
 Load only the sections relevant to the requested page. These are behavioral and compositional relationships, not a layout template. Adapt their shape, spacing, color, proportions, and playful expression to the product.
 
+## Contents
+
+- [Global Navigation](#global-navigation)
+- [Announcement](#announcement)
+- [Hero](#hero)
+- [Search and Filters](#search-and-filters)
+- [Category Control](#category-control)
+- [Content Card](#content-card)
+- [Badge and Metadata](#badge-and-metadata)
+- [Featured Panel](#featured-panel)
+- [Pricing and Plan Choice](#pricing-and-plan-choice)
+- [Detail View](#detail-view)
+- [Empty, Loading, Progress, and Success States](#empty-loading-progress-and-success-states)
+- [FAQ and Disclosure](#faq-and-disclosure)
+- [Footer](#footer)
+- [Page Composition Recipes](#page-composition-recipes)
+- [Copy Patterns](#copy-patterns)
+
 ## Global Navigation
 
 - Keep the product identity, primary destinations, and account or primary action easy to distinguish.

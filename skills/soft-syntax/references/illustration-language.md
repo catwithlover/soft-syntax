@@ -8,6 +8,21 @@ The style compresses one meaningful idea into a bold, quiet flat image:
 
 The result should feel friendly, composed, and gently playful. It may be charming or slightly awkward, but should not become infantile, anime-like, or generically corporate.
 
+## Contents
+
+- [Begin With Meaning](#begin-with-meaning)
+- [Choose the Subject Freely](#choose-the-subject-freely)
+- [Shape Language](#shape-language)
+- [Detail and Character](#detail-and-character)
+- [Negative Space, Overlap, and Lines](#negative-space-overlap-and-lines)
+- [Color Roles](#color-roles)
+- [Composition and Motion](#composition-and-motion)
+- [Adapt to the Usage](#adapt-to-the-usage)
+- [Construction Workflow](#construction-workflow)
+- [Prompt Recipe](#prompt-recipe)
+- [Avoid](#avoid)
+- [Acceptance Checks](#acceptance-checks)
+
 ## Begin With Meaning
 
 Write one plain sentence that describes the image before drawing it:

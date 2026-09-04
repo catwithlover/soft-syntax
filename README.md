@@ -1,9 +1,9 @@
-<p align="right"><strong>English</strong> · <a href="README.zh-TW.md">繁體中文</a></p>
-
 <div align="center">
   <img src="docs/assets/logo.svg" alt="Soft Syntax Lightkeeper" width="180" />
   <h1>Soft Syntax</h1>
   <p><em>A gentler grammar for digital products.</em></p>
+  <p><a href="https://catwithlover.github.io/soft-syntax/"><strong>Website</strong></a></p>
+  <p><strong>English</strong> · <a href="README.zh-TW.md">繁體中文</a></p>
 </div>
 
 **Soft Syntax** is a reusable design skill for clear, accessible, responsive interfaces shaped by approachable minimalism, restrained playfulness, warm typography, and soft flat imagery.

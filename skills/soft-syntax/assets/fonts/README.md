@@ -18,7 +18,9 @@ Integrity checksums:
 
 ## Usage
 
-Reuse a project's correctly loaded copies when available. Otherwise, copy the required font file and every license or notice listed under Redistribution Rules into the generated project. Huninn requires both `LICENSE.txt` and `APACHE-2.0.txt`. Huninn is substantially larger than Quicksand, so include it only when the project needs self-hosted Traditional Chinese support.
+Quicksand and Huninn are bundled fallbacks for friendly, beginner-oriented products, not a required Soft Syntax pairing. Choose a different family when the product's subject, audience, reading needs, or intended voice calls for one, and preserve a suitable established typeface during restyles.
+
+When this pairing is appropriate, reuse a project's correctly loaded copies when available. Otherwise, copy the required font file and every license or notice listed under Redistribution Rules into the generated project. Huninn requires both `LICENSE.txt` and `APACHE-2.0.txt`. Huninn is substantially larger than Quicksand, so include it only when the project needs self-hosted Traditional Chinese support.
 
 ```css
 @font-face {

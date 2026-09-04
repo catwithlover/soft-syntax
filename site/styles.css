@@ -7,8 +7,8 @@
 }
 
 @font-face {
-  font-family: "Huninn";
-  src: url("assets/fonts/jf-openhuninn-2.1.ttf") format("truetype");
+  font-family: "Soft Syntax Rounded TC";
+  src: url("assets/fonts/SoftSyntaxRoundedTC-subset.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -36,9 +36,9 @@
   --gutter: clamp(1.15rem, 4vw, 3rem);
 }
 
-html[lang="zh-TW"] {
-  --font-sans: "Quicksand", "Huninn", sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Huninn", monospace;
+html:lang(zh-Hant) {
+  --font-sans: "Quicksand", "Soft Syntax Rounded TC", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Soft Syntax Rounded TC", monospace;
 }
 
 *,
@@ -111,6 +111,14 @@ h1 {
   max-width: 12ch;
   margin-bottom: 1.5rem;
   font-size: clamp(2.9rem, 6.6vw, 6.2rem);
+  text-wrap: balance;
+}
+
+html:lang(zh-Hant) h1 {
+  max-width: 10em;
+  font-size: clamp(2.65rem, 5.6vw, 5.35rem);
+  letter-spacing: -0.02em;
+  line-height: 1.16;
 }
 
 h2 {
@@ -206,30 +214,23 @@ p:last-child {
   gap: 0.8rem;
 }
 
-.language-switcher {
-  display: flex;
-  padding: 0.2rem;
+.language-link {
+  display: inline-flex;
+  min-height: 3.1rem;
+  align-items: center;
+  padding: 0.55rem 0.9rem;
   border: 1px solid var(--border);
   border-radius: 0.85rem;
   background: var(--surface);
-}
-
-.language-option {
-  min-width: 3.2rem;
-  min-height: 2.75rem;
-  padding: 0.35rem 0.7rem;
-  border: 0;
-  border-radius: 0.62rem;
-  background: transparent;
-  color: var(--muted);
-  cursor: pointer;
-  font-size: 0.83rem;
-  font-weight: 700;
-}
-
-.language-option[aria-pressed="true"] {
-  background: var(--brand-wash);
   color: var(--brand-dark);
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: border-color 160ms ease;
+}
+
+.language-link:hover {
+  border-color: var(--brand);
 }
 
 .github-link {
@@ -282,7 +283,7 @@ p:last-child {
   text-transform: uppercase;
 }
 
-[lang="zh-TW"] .eyebrow {
+html:lang(zh-Hant) .eyebrow {
   letter-spacing: 0.08em;
 }
 
@@ -883,9 +884,8 @@ p:last-child {
     justify-content: center;
   }
 
-  .language-option {
-    min-width: 2.8rem;
-    padding-inline: 0.5rem;
+  .language-link {
+    padding-inline: 0.75rem;
   }
 
   .hero {

@@ -2,17 +2,29 @@
 
 Generate an approachable minimalist system from the product's subject and existing identity. The rules below define relationships and quality thresholds; they are not a fixed visual theme.
 
+## Contents
+
+- [Typography](#typography)
+- [Color Construction](#color-construction)
+- [Gentle Playfulness System](#gentle-playfulness-system)
+- [Layout and Spacing](#layout-and-spacing)
+- [Soft Flat Surfaces and Elevation](#soft-flat-surfaces-and-elevation)
+- [Focus and Motion](#focus-and-motion)
+- [Accessibility Floor](#accessibility-floor)
+
 ## Typography
 
-### Default Pairing for New Products
+### Choose a Product Voice
 
-For a new standalone product without an established or mandated typeface, use:
+Choose type from the product's subject, audience, reading needs, and intended emotional voice. Typography is a strong identity signal, so do not repeat one pairing across unrelated products by default. When extending or restyling an existing product, preserve a suitable established typeface rather than introducing a competing system merely because the affected route or component is new.
+
+For a friendly, beginner-oriented product without an established or mandated typeface, this bundled pairing is a practical fallback:
 
 - **Latin:** Quicksand, preferably weights 400 through 700
 - **Traditional Chinese:** Huninn (`jf open 粉圓`), an open-source Traditional Chinese rounded typeface released primarily under SIL Open Font License 1.1, with Kosugi Maru-derived Hanzi under Apache-2.0
 - **Code and terminal content:** a neutral system monospace
 
-When extending or restyling an existing product, preserve a suitable established typeface. Do not introduce a competing font system merely because the affected route or component is new.
+Treat the pairing as an available resource, not the Soft Syntax voice. If the product needs greater editorial authority, technical precision, compact data density, cultural specificity, or another distinct character, choose a typeface that serves that need and state the rationale before implementation.
 
 Unmodified upstream files and their licenses are bundled in [assets/fonts](../assets/fonts). Reuse a project's correctly loaded copies when available; otherwise use these assets for deterministic, offline, or self-hosted output. Read [the bundled font notes](../assets/fonts/README.md) before copying or loading either font, use the documented `@font-face` aliases, and include every required license and notice. Huninn requires both `huninn/LICENSE.txt` and `huninn/APACHE-2.0.txt`.
 
@@ -27,7 +39,7 @@ html {
 }
 ```
 
-Keep Quicksand before Huninn so Latin characters retain the intended voice while unsupported Traditional Chinese glyphs fall through to Huninn. Set the document language accurately, such as `lang="zh-Hant"`.
+When using this fallback, keep Quicksand before Huninn so Latin characters retain the intended voice while unsupported Traditional Chinese glyphs fall through to Huninn. Set the document language accurately, such as `lang="zh-Hant"`.
 
 Do not assume every CJK weight exists. Inspect Chinese headings for synthetic bold artifacts. If heavy synthesis harms the glyphs, create hierarchy with size, spacing, color, and layout while keeping Chinese text at its supported weight.
 

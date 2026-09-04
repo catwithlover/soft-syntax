@@ -1,9 +1,9 @@
-<p align="right"><a href="README.md">English</a> · <strong>繁體中文</strong></p>
-
 <div align="center">
   <img src="docs/assets/logo.svg" alt="Soft Syntax Lightkeeper" width="180" />
   <h1>Soft Syntax</h1>
   <p><em>為數位產品打造更溫和的語法。</em></p>
+  <p><a href="https://catwithlover.github.io/soft-syntax/zh-TW/"><strong>Website</strong></a></p>
+  <p><a href="README.md">English</a> · <strong>繁體中文</strong></p>
 </div>
 
 **Soft Syntax** 是一套可重複使用的設計 skill，以親和極簡、克制的童趣、溫暖字體與柔和扁平圖像，打造清楚、無障礙且能適應不同螢幕的介面。
