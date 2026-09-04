@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - "site/**"
+      - "demos/**"
       - "LICENSE"
       - "skills/soft-syntax/assets/fonts/**"
       - ".github/workflows/deploy-pages.yml"
@@ -34,6 +35,7 @@ jobs:
         run: |
           mkdir -p _site/licenses/fonts/quicksand _site/licenses/fonts/huninn
           cp -R site/. _site/
+          cp -R demos _site/demo-assets
           cp LICENSE _site/LICENSE.txt
           cp skills/soft-syntax/assets/fonts/THIRD_PARTY_NOTICES.md _site/licenses/fonts/THIRD_PARTY_NOTICES.md
           cp skills/soft-syntax/assets/fonts/quicksand/OFL.txt _site/licenses/fonts/quicksand/OFL.txt
