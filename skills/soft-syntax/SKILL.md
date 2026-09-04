@@ -45,12 +45,23 @@ Optimize in this order:
 Infer the requested mode before working:
 
 - **Build**: create the requested website or route and make it runnable.
-- **Restyle**: inspect the existing product, preserve working behavior and brand requirements, then apply this system without creating a parallel component system.
+- **Restyle**: inspect the existing product, agree on a style-override or structural-restyle strategy, preserve working behavior and brand requirements, then apply this system without creating a parallel component system.
 - **Review**: do not edit. Return prioritized usability, visual-system, responsiveness, and accessibility findings with file or element references.
 - **Plan**: provide a compact visual direction, page structure, token choices, and implementation notes without writing code.
 - **Image**: create a requested pictorial mark or illustration. Honor the requested medium, format, and editability. Use a compatible image-generation tool when it suits the deliverable; construct native SVG for a requested editable vector; otherwise return a production-ready image prompt and SVG construction plan.
 
 Unless the user asks for Review or Plan, complete the requested interface or image rather than only describing it.
+
+## Confirm the Restyle Strategy
+
+When the user requests a restyle of an existing product, separate the visual direction from the implementation scope. Before editing, distinguish between:
+
+- **Style override**: change CSS, tokens, and theme-level presentation while retaining the existing DOM, content structure, behavior, and assets. Prefer this when the current structure already supports the desired hierarchy and responsiveness, the existing imagery fits the new direction, source markup is unavailable, or the user needs an additive and easily removable layer such as an injected stylesheet or user style.
+- **Structural restyle**: revise DOM or component composition, responsive structure, and imagery when needed, while preserving required content, behavior, routes, data bindings, and accessible states. Prefer this when a meaningful transformation depends on changing hierarchy or composition, replacing or removing strongly styled images, consolidating markup, or fixing layout and accessibility problems that are bound to the existing structure.
+
+Inspect a representative desktop and mobile view, the DOM or component constraints, and the prominent image assets before recommending a strategy. If the user has already constrained the implementation scope, follow that choice. Otherwise, ask one concise question before implementation, present both strategies, and recommend one with a short product-specific reason. Ask in the user's language and make the scope difference explicit: style override preserves DOM and assets; structural restyle may change them.
+
+Treat style override as a constraint, not the default or universally safer option. If strong imagery, rigid markup, or layout-coupled assets would make the result only superficially different, say so and recommend a structural restyle. Conversely, do not rebuild markup when theme-level changes can satisfy the goal and the user values low integration risk. Do not switch strategies after implementation begins without explaining the discovered limitation and confirming the new scope.
 
 ## Start With Context
 
@@ -225,6 +236,8 @@ Avoid these failure modes:
 
 - Reusing the same palette across unrelated projects
 - Inventing a fresh palette for a restyle when the target's existing colors or logo could anchor it
+- Defaulting to a style override when strongly styled imagery or markup-bound composition prevents a meaningful transformation
+- Rebuilding DOM or components when a style override would meet the goal and the user wants a low-risk, removable change
 - Assigning fixed colors or gradients to generic content categories
 - Defaulting to any signature treatment before the product context justifies it
 - Copying exact dimensions, breakpoints, card proportions, or page recipes from a reference site
@@ -267,7 +280,7 @@ Keep the report concise.
 
 For interface work, state:
 
-1. The selected page mode for each affected route or flow, primary action, product-specific signature, and primary playful moment
+1. The selected page mode for each affected route or flow; for Restyle, the agreed style-override or structural-restyle strategy; plus the primary action, product-specific signature, and primary playful moment
 2. What was implemented, changed, planned, or found in Review mode
 3. Verification performed and any remaining limitation
 
