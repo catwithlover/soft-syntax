@@ -51,7 +51,7 @@ cp -r soft-syntax/skills/soft-syntax /path/to/your/agent/skills/
 
 ## 改造示範
 
-[`demos/`](demos/) 目錄收集以本 skill 改造真實網站的前後對照截圖——目前收錄 [Selenium 首頁](demos/selenium/)，並記錄每個成果的策略、配色依據與設計決策。
+[`demos/`](demos/) 目錄收集以本 skill 改造真實網站的前後對照截圖——目前收錄 [Selenium 首頁](demos/selenium/)與 [ModSecurity 首頁](demos/modsecurity/)，並記錄每個成果的策略、配色依據與設計決策。
 
 ## 圖像生成
 

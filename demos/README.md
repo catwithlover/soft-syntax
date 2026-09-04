@@ -36,3 +36,4 @@ The demo commits are screenshots only. If a capture exceeds a few hundred KB, qu
 | Demo | Target | Strategy |
 | --- | --- | --- |
 | [selenium](selenium/) | [selenium.dev](https://www.selenium.dev/) | Structural restyle |
+| [modsecurity](modsecurity/) | [modsecurity.org](https://modsecurity.org/) | Structural restyle |
