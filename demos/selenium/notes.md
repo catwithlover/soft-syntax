@@ -10,7 +10,7 @@ Sampled from the live site before designing:
 
 | Sampled | Value | Becomes |
 | --- | --- | --- |
-| Logo / hero green | `#43B02A` | Illustration and focal accents; darkened to `#2E7D1E` for the action role so buttons and links pass WCAG AA (5.2:1 on white) |
+| Logo / hero green | `#43B02A` | Primary button fill (with dark ink text, 5.3:1) and illustration focal accents — kept at the exact brand value; same hue darkened to `#2E7D1E` for links and text pairings that must pass WCAG AA on white (5.2:1) |
 | Announcement blue | `#4C6FBC` | Lightened to a quiet tonal announcement band `#EDF2F9` with dark blue ink |
 | Footer | `#403F4C` | Softened to a green-neutral dark `#2C332E` |
 | Body text | `#343A40` | Softened ink `#222922` |
