@@ -51,7 +51,7 @@ difficulty, and understand where to begin. Keep the experience calm and encourag
 
 ## Demos
 
-The [`demos/`](demos/) directory collects before/after captures of real websites restyled with the skill — currently the [Selenium homepage](demos/selenium/) and the [ModSecurity homepage](demos/modsecurity/) — with notes on the strategy, palette basis, and decisions behind each result.
+The [`demos/`](demos/) directory collects before/after captures of real websites restyled with the skill — currently the [Selenium homepage](demos/selenium/), the [ModSecurity homepage](demos/modsecurity/), and the [national animal shelter listing](demos/pet/) — with notes on the strategy, palette basis, and decisions behind each result.
 
 ## Image Generation
 
